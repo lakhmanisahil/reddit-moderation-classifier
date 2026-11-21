@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+
+# Secrets — NEVER commit your API key
+.env
+
+# Data (re-created with scripts/, too big or not ours to redistribute)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/
+
+# Trained models (re-created with `python train.py`; Random Forest files get big)
+artifacts/*.joblib
+
+# Gemini response cache (re-created by run_gemini.py)
+artifacts/gemini_cache*.jsonl
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
